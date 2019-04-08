@@ -33,6 +33,8 @@ $sanpham  = mysqli_query($connect, $select_sanpham);
                             <h2><?php echo $row1[1] ?></h2>
                             <del><?php echo $row1[2] ?></del>
                             <p><?php echo $row1[3] ?></p>
+                            <a class="hihi" href="http://"> xoa</a>
+                            <a class="hihi"  href="http://"> sua</a>
                         </figcaption>
                     </figure>
 

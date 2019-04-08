@@ -1,6 +1,6 @@
 
 .card {
-    border: 1px solid #28a745;
+    border: 1px solid #d8b978;
 }
 .card-login {
     margin-top: 130px;
@@ -89,7 +89,7 @@ input:focus{
     border-radius: 0;
 }
 .box_design{
-    border:  2px solid;
+    border:  .5px solid;
 }
 .edit_img{
 
@@ -101,4 +101,13 @@ input:focus{
 }
 .hih{
     display: flex;
+}
+.hihi:hover {
+    cursor: pointer;
+}
+.btn-outline-danger{
+   background:  #d8b9787d
+}
+.btn-outline-danger:hover{
+    background:  #d8b978
 }

@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="form-group">
-                   <input type="submit" name="btn" value="Login" name="submit" class="btn btn-outline-danger float-right login_btn">
+                   <input type="submit" name="btn" value="Login" name="submit" class="btn btn-outline-danger float-right">
                 </div>
 
             </form>
