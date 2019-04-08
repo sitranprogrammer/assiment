@@ -19,7 +19,7 @@ include("select.php");
 
 
 if (isset($_POST['btnthem'])) {
-    $sql_sanpham = "INSERT INTO `sanpham` (`MaSp`,`tensp`, `new_Price`, `old_price`, `img`, `desc`, `maloai`)   value  (null, '".$_POST['tensp']."',".$_POST['old_price'].",".$_POST['new_price'].",'".$_POST['newfile']."','".$_POST['de']."','".$_POST['loai']."'); ";
+    $sql_sanpham = "INSERT INTO `sanpham` (`MaSp`,`tensp`, `new_Price`, `old_price`, `img`, `desc`, `maloai`)   value  (null, '".$_POST['tensp']."',".$_POST['old_price'].",".$_POST['new_price'].",'".'img/'.$_POST['newfile']."','".$_POST['de']."','".$_POST['loai']."'); ";
 //    echo $sql_sanpham;
     $resurel_loai =  mysqli_query($connect,$sql_sanpham);
    
