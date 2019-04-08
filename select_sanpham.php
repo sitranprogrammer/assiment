@@ -29,7 +29,7 @@ $sanpham  = mysqli_query($connect, $select_sanpham);
                 <div class="col-md-12 box_design">
                     <figure class="chia_box">
                         <img src="<?php echo $row1[4]; ?>" class="edit_img" alt="" srcset="">
-                        <figcaption clas="chia_box" >
+                        <figcaption clas="hih" >
                             <h2><?php echo $row1[1] ?></h2>
                             <del><?php echo $row1[2] ?></del>
                             <p><?php echo $row1[3] ?></p>
