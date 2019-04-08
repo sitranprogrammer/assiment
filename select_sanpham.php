@@ -15,12 +15,14 @@
 include("connect.php");
 $select_sanpham =  "select * from sanpham;";
 $sanpham  = mysqli_query($connect, $select_sanpham);
-while ($row1  = mysqli_fetch_array($sanpham)) { ?>
+?>
 
 
     <body>
+  
         <div class="container">
             <div class="row">
+            <?php while ($row1  = mysqli_fetch_array($sanpham)) { ?>
                 <div class="col-md-3">
                     <figure>
                         <img src="<?php echo $row1[4]; ?>" class="img-fluid" alt="" srcset="">
@@ -32,46 +34,15 @@ while ($row1  = mysqli_fetch_array($sanpham)) { ?>
                     </figure>
 
                 </div>
-                <div class="col-md-3">
-                    <figure>
-                        <img src="<?php echo $row1[4]; ?>" class="img-fluid" alt="" srcset="">
+                
+                <?php }?>
 
-                        <figcaption>
-                            <h2><?php echo $row1[1] ?></h2>
-                            <del><?php echo $row1[2] ?></del>
-                            <p><?php echo $row1[3] ?></p>
-                        </figcaption>
 
-                    </figure>
-                </div>
-                <div class="col-md-3">
-                    <figure>
-                        <img src="<?php echo $row1[4]; ?>" class="img-fluid" alt="" srcset="">
 
-                        <figcaption>
-                            <h2><?php echo $row1[1] ?></h2>
-                            <del><?php echo $row1[2] ?></del>
-                            <p><?php echo $row1[3] ?></p>
-                        </figcaption>
-
-                    </figure>
-                </div>
-                <div class="col-md-3">
-                    <figure>
-                        <img src="<?php echo $row1[4]; ?>" class="img-fluid" alt="" srcset="">
-                        <figcaption>
-
-                            <h2><?php echo $row1[1] ?></h2>
-                            <del><?php echo $row1[2] ?></del>
-                            <p><?php echo $row1[3] ?></p>
-                        </figcaption>
-
-                    </figure>
-                </div>
 
             </div>
         </div>
-    <?php } ?>
-</body>
 
-</html>
+    </body>
+
+    </html>
