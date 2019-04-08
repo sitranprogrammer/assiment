@@ -88,3 +88,14 @@ input:focus{
     border: 1px solid #ced4da;
     border-radius: 0;
 }
+.box_design{
+    border:  2px solid;
+}
+.edit_img{
+
+    width: 10%;
+    height: 10%;
+}
+.chia_box{
+    display: flex;
+}
